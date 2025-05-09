@@ -1,8 +1,8 @@
 # S89_Saimanideep_Capstone_Vitaldrop
-# Smart Blood Donation App - Blood Guardian
+# Smart Blood Donation App - Vitaldrop
 
 ## Overview
-**Blood Guardian** is a smart mobile application designed to make blood donation faster, smarter, and accessible during emergencies. It connects patients with nearby donors, locates blood banks, and uses AI to predict blood shortages — saving lives with the power of technology.
+**Vitaldrop** is a smart mobile application designed to make blood donation faster, smarter, and accessible during emergencies. It connects patients with nearby donors, locates blood banks, and uses AI to predict blood shortages — saving lives with the power of technology.
 
 Developed as part of the **Computer Science Capstone Project** by **Ponamanda Saimanideep**.
 
