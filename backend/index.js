@@ -22,11 +22,13 @@ app.get('/', (req, res) => {
   res.send('Vitaldrop Backend Running');
 });
 
-// Import Auth Routes
+// Import Routes
 const authRoutes = require('./routes/auth');
+const formRoutes = require('./routes/form');
 app.use('/api', authRoutes);
+app.use('/api/form', formRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5002;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
