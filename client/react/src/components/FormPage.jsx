@@ -13,8 +13,8 @@ const FormPage = () => {
     bloodGroup: '',
     age: '',
     diseases: ''
-  });
-
+  }); 
+  //this is my form page//
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
