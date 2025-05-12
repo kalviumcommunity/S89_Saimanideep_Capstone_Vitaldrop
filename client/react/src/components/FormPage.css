@@ -1,0 +1,71 @@
+/* Main Container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.navbar-form{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* Heading */
+.container h1 {
+    text-align: center;
+    color: #333;
+}
+.main-div-form{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* Paragraph */
+.container p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+form label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Input Fields */
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button */
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d43f3f;
+}
