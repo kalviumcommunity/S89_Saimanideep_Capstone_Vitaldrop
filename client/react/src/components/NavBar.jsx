@@ -15,8 +15,9 @@ const NavBar = () => {
       {/* Navigation Menu */}
       <nav className="navigation">
         <ul className="nav-links">
-          <li><a href="#" className="active">Home</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="/" className="active">Home</a></li>
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/admin">Admin</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>

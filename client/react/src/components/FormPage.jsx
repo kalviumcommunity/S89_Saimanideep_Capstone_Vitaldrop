@@ -2,8 +2,10 @@
 import React, { useState } from 'react';
 import NavBar from './NavBar';
 import './FormPage.css';
+import { useNavigate } from 'react-router-dom';
 
 const FormPage = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     telephone: '',
@@ -26,7 +28,7 @@ const FormPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5002/api/form/submit', {
+      const response = await fetch('http://localhost:5000/api/form/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -39,6 +41,7 @@ const FormPage = () => {
       const data = await response.json();
       console.log('Success:', data);
       alert('Form submitted successfully');
+      navigate('/thank-you');
     } catch (error) {
       console.error('Error:', error);
     }
