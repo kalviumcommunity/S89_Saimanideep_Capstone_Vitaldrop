@@ -1,0 +1,160 @@
+/* Navbar Container */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-links-div{
+  all: unset;
+  display: flex;
+  align-items: center;
+}
+
+.blood-drop-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.blood-drop-icon svg {
+  filter: drop-shadow(0 2px 4px rgba(255, 71, 87, 0.3));
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.logo-text:hover .vital {
+  color: #ff3838; /* Brighter pink/red on hover */
+  transform: scale(1.05);
+  text-shadow: 0 2px 6px rgba(255, 56, 56, 0.4);
+}
+
+.logo-text:hover .drop {
+  color: #ffffff; /* Pure bright white on hover */
+  transform: scale(1.05);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.vital {
+  color: #ff4757; /* Pink/Red like in the image */
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgba(255, 71, 87, 0.3);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.drop {
+  color: #ffffff; /* Bright white */
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  margin-right: 20px; /* Reset to normal positioning like the first image */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* Reduced gap to fit more items */
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff; /* White text like in the image */
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ff4757; /* Pink/Red on hover */
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Logo Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Logo Hover Effects */
+.logo-container:hover svg {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 6px 12px rgba(230, 57, 70, 0.5));
+}
+
+.logo-container:hover .pulse-ring {
+  animation-duration: 1s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .logo-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo-container svg {
+    width: 32px;
+    height: 32px;
+  }
+}

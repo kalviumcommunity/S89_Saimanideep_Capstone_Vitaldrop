@@ -1,0 +1,67 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(to bottom, #fff8f8, #ffdede);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Thank You Section */
+.thank-you-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Heading */
+.thank-you-container h1 {
+    font-size: 2rem;
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+/* Message Content */
+.thank-you-container p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Call-to-Action */
+.thank-you-container .cta {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #ff3333;
+    margin-top: 20px;
+}
+
+/* Decorative Elements */
+.thank-you-container::before {
+    content: "🩸";
+    font-size: 40px;
+    display: block;
+    color: #ff4d4d;
+}
+
+/* Button */
+button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+}
